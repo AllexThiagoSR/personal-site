@@ -13,7 +13,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header />
+        <p>
+          Opa! Meu nome é Allex Thiago.
+          Sou um Desenvolvedor Web Fullstack apaixonado em resolver problemas no mundo da tecnologia.
+        </p>
         <Image
           src={ placeholderImage }
           alt="Author"

@@ -4,7 +4,7 @@ function NavBar() {
   return (
     <nav>
       <ol>
-        <li>1</li>
+        <li>Sobre</li>
       </ol>
     </nav>
   );
