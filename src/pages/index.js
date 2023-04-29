@@ -1,3 +1,4 @@
+import Header from '@/components/Header';
 import Head from 'next/head';
 import Image from 'next/image';
 import placeholderImage from 'src/images/placeholderImage.jpg';
@@ -12,6 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <Header />
         <Image
           src={ placeholderImage }
           alt="Author"
