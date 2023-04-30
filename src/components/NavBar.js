@@ -5,6 +5,7 @@ function NavBar() {
     <nav>
       <ol>
         <li>Sobre</li>
+        <li>Projetos</li>
       </ol>
     </nav>
   );

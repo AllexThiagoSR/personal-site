@@ -3,7 +3,7 @@ import NavBar from './NavBar';
 
 function Header() {
   return (
-    <header>
+    <header className="header">
       <span>Allek</span>
       <NavBar />
     </header>

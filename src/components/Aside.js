@@ -1,42 +1,39 @@
 import React from 'react';
 import Image from 'next/image';
-import gitHubIcon from '../images/githubIcon.svg';
-import linkedinLogo from '../images/linkedinLogo.svg';
-import gmailLogo from '../images/gmailLogo.svg';
-
+import gitHubLogoIcon from '../images/githubIcon.svg';
+import linkedinLogoIcon from '../images/linkedinLogo.svg';
+import gmailLogoIcon from '../images/gmailLogo.svg';
+import ContactCard from './ContactCard';
 
 function Aside() {
+  const contactsItems = [
+    {
+      name: 'Linkedin',
+      icon: linkedinLogoIcon,
+      href: 'https://www.linkedin.com/in/allexthiagosantosrosa/',
+    },
+    {
+      name: 'GitHub',
+      icon: gitHubLogoIcon,
+      href: 'https://github.com/AllexThiagoSR',
+    },
+    {
+      name: 'Gmail',
+      icon: gmailLogoIcon,
+      href: 'mailto:allexthiagoDEV@gmail.com',
+    }
+  ];
+
   return (
     <aside className="aside-section">
       <ul className="contacts-list">
-        <li>
-          <Image
-            alt="GitHub"
-            src={ linkedinLogo }
-            width={ 30 }
-            height={ 30 }
-            className="logo"
-          />
-        </li>
-        <li>
-          <Image
-            alt="GitHub"
-            src={ gitHubIcon }
-            width={ 30 }
-            height={ 30 }
-            className="logo"
-          />
-        </li>
-        
-        <li>
-          <Image
-            alt="GitHub"
-            src={ gmailLogo }
-            width={ 30 }
-            height={ 30 }
-            className="logo"
-          />
-        </li>
+        {
+          contactsItems.map((item) => (
+            <li key={ item.name + ' logo'}>
+              <ContactCard contact={ item } />
+            </li>
+          ))
+        }
       </ul>
     </aside>
   );

@@ -110,14 +110,23 @@ a {
 
 body {
   height: 100vh;
+}
+
+.header {
   display: flex;
-  flex-direction: column;
+  padding: 0 15px;
+  justify-content: space-between;
+  height: 70px;
 }
 
 .layout-default {
   display: flex;
-  justify-content: space-between;
   height: 80%;
+}
+
+.layout-default main {
+  margin-left: 50px;
+  width: 85%;
 }
 
 .contacts-list {
@@ -133,7 +142,7 @@ body {
 .aside-section {
   display: flex;
   height: 100%;
-  width: 10%;
+  width: 100px;
 }
 
 #__next {
