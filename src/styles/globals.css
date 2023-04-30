@@ -107,3 +107,35 @@ a {
 * {
   margin: 0;
 }
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-default {
+  display: flex;
+  justify-content: space-between;
+  height: 80%;
+}
+
+.contacts-list {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aside-section {
+  display: flex;
+  height: 100%;
+  width: 10%;
+}
+
+#__next {
+  height: 100vh;
+}

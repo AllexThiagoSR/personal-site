@@ -1,4 +1,3 @@
-import Header from '@/components/Header';
 import Head from 'next/head';
 import Image from 'next/image';
 import placeholderImage from 'src/images/placeholderImage.jpg';
@@ -15,7 +14,8 @@ export default function Home() {
       <main>
         <p>
           Opa! Meu nome é Allex Thiago.
-          Sou um Desenvolvedor Web Fullstack apaixonado em resolver problemas no mundo da tecnologia.
+          Sou um Desenvolvedor Web Fullstack
+          apaixonado em resolver problemas no mundo da tecnologia.
         </p>
         <Image
           src={ placeholderImage }
