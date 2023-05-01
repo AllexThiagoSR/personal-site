@@ -14,11 +14,14 @@ export default function Home() {
       </Head>
       <main>
         <section className="short-description">
-          <p>
-            Opa! Meu nome é Allex Thiago.
-            Sou um Desenvolvedor Web Fullstack
-            apaixonado em resolver problemas no mundo da tecnologia.
-          </p>
+          <div>
+            <p>
+              Opa! Meu nome é Allex Thiago.
+              Sou um Desenvolvedor Web Fullstack
+              apaixonado em resolver problemas no mundo da tecnologia.
+            </p>
+            <SkillsList /> 
+          </div>
           <Image
             src={ placeholderImage }
             alt="Author"
@@ -26,7 +29,6 @@ export default function Home() {
             height={ 200 }
           />
         </section>
-        <SkillsList />
       </main>
     </>
   )
