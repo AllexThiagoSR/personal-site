@@ -2,11 +2,11 @@ import React from 'react';
 
 function NavBar() {
   return (
-    <nav>
-      <ol>
+    <nav className="navigation-bar">
+      <ul>
         <li>Sobre</li>
         <li>Projetos</li>
-      </ol>
+      </ul>
     </nav>
   );
 }

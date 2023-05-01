@@ -1,0 +1,21 @@
+.short-description {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.short-description p {
+  max-width: 500px;
+  font-size: 22px;
+}
+
+.skills-list {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 200px 200px;
+  column-gap: 5%;
+}
+
+.skills-list li::marker{
+  content: '▻ ';
+}

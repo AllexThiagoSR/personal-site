@@ -26,6 +26,7 @@ function Aside() {
 
   return (
     <aside className="aside-section">
+      <hr/>
       <ul className="contacts-list">
         {
           contactsItems.map((item) => (

@@ -127,7 +127,7 @@ body {
 }
 
 .layout-default main {
-  margin-left: 50px;
+  margin: 0 50px;
   width: 85%;
 }
 
@@ -146,23 +146,35 @@ body {
 }
 
 .aside-section {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   display: flex;
   height: 100%;
   width: 100px;
   position: relative;
+  overflow-y: hidden;
 }
 
 .logo:hover {
   translate: 0 -2px;
 }
 
+.navigation-bar ul {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-bar ul li {
+  margin: 0 10px;
+}
+
 hr {
-  height: 182px;
+  height: 30%;
   width: 1px;
-  position: absolute;
-  top: 330px;
-  left: 50%;
   background-color: black;
+  z-index: -1;
 }
 
 #__next {
