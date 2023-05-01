@@ -114,9 +114,11 @@ body {
 
 .header {
   display: flex;
-  padding: 0 15px;
+  padding: 0 30px;
   justify-content: space-between;
   height: 70px;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .layout-default {
@@ -139,10 +141,28 @@ body {
   align-items: center;
 }
 
+.contacts-list li {
+  margin: 7px 0;
+}
+
 .aside-section {
   display: flex;
   height: 100%;
   width: 100px;
+  position: relative;
+}
+
+.logo:hover {
+  translate: 0 -2px;
+}
+
+hr {
+  height: 182px;
+  width: 1px;
+  position: absolute;
+  top: 330px;
+  left: 50%;
+  background-color: black;
 }
 
 #__next {

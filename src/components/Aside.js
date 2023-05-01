@@ -35,6 +35,7 @@ function Aside() {
           ))
         }
       </ul>
+      <hr/>
     </aside>
   );
 }
