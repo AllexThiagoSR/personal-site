@@ -1,0 +1,4 @@
+<svg className="header-logo" width="40" height="40" >
+  <rect rx="7" ry="7" width="40" height="40"/>
+  <text className="header-logo-text" x="7" y="35">A</text>
+</svg>
