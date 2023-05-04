@@ -1,11 +1,12 @@
+import Link from 'next/link';
 import React from 'react';
 
 function NavBar() {
   return (
     <nav className="navigation-bar">
       <ul>
-        <li>Sobre</li>
-        <li>Projetos</li>
+        <li><Link href="/about">Sobre</Link></li>
+        <li><Link href="/projects">Projetos</Link></li>
       </ul>
     </nav>
   );

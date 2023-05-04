@@ -163,6 +163,13 @@ body {
   translate: 0 -2px;
 }
 
+.header-logo-text  { 
+  fill: white;
+  font-size: 45px;
+  font-family: courier, arial, helvetica;
+  font-weight: 900;
+} 
+
 .navigation-bar ul {
   display: flex;
   padding: 0;
