@@ -106,6 +106,9 @@ a {
 } */
 * {
   margin: 0;
+  /* background-color: black;
+  color: white;
+  fill: white; */
 }
 
 body {

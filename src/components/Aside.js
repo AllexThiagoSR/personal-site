@@ -1,29 +1,11 @@
 import React from 'react';
-import Image from 'next/image';
-import gitHubLogoIcon from '../images/githubIcon.svg';
-import linkedinLogoIcon from '../images/linkedinLogo.svg';
-import gmailLogoIcon from '../images/gmailLogo.svg';
+// import gitHubLogoIcon from '../images/githubIcon.svg';
+// import linkedinLogoIcon from '../images/linkedinLogo.svg';
+// import gmailLogoIcon from '../images/gmailLogo.svg';
 import ContactCard from './ContactCard';
+import contactsItems from '@/helpers/contacts';
 
 function Aside() {
-  const contactsItems = [
-    {
-      name: 'Linkedin',
-      icon: linkedinLogoIcon,
-      href: 'https://www.linkedin.com/in/allexthiagosantosrosa/',
-    },
-    {
-      name: 'GitHub',
-      icon: gitHubLogoIcon,
-      href: 'https://github.com/AllexThiagoSR',
-    },
-    {
-      name: 'Gmail',
-      icon: gmailLogoIcon,
-      href: 'mailto:allexthiagoDEV@gmail.com',
-    }
-  ];
-
   return (
     <aside className="aside-section">
       <hr/>

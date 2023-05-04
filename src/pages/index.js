@@ -17,8 +17,9 @@ export default function Home() {
           <div>
             <p>
               Opa! Meu nome é Allex Thiago.
-              Sou um Desenvolvedor Web Fullstack
-              apaixonado em resolver problemas no mundo da tecnologia.
+              Sou um Desenvolvedor Web Frontend Junior
+              apaixonado em resolver problemas no mundo da tecnologia,
+              e estou em busca de oportunidades de me desenvolver e me desafiar.
             </p>
             <SkillsList /> 
           </div>
