@@ -14,7 +14,7 @@ export default function Home() {
       <main>
         <section className="short-description">
           <div>
-            <p>
+            <p className="short-description-text">
               Opa! Meu nome é Allex Thiago.
               Sou um Desenvolvedor Web Frontend Junior
               apaixonado em resolver problemas no mundo da tecnologia,
