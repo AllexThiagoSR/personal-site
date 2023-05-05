@@ -7,6 +7,7 @@ export async function getStaticProps() {
     props: {
       deployments,
     },
+    revalidate: 10,
   }
 }
 
