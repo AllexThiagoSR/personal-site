@@ -12,6 +12,9 @@ function ProjectsList({ deployments }) {
           </li>
         ))
       }
+      <li>
+        <ProjectCard project={ deployments[0] } />
+      </li>
     </ul>
   );
 }

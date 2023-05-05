@@ -7,7 +7,7 @@ ProjectCard.propTypes = {
 
 function ProjectCard({ project }) {
   return (
-    <div>
+    <div className="project-card">
       { project.name }
     </div>
   );

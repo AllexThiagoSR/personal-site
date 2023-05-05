@@ -1,5 +1,21 @@
 .projects-list {
-  padding: 0;
+  overflow-y: scroll;
+  justify-content: center;
+  grid-template-columns: minmax(100px, 500px) minmax(100px, 500px);
+  column-gap: 5%;
+  display: grid;
   list-style: none;
-  padding: 0 50px;
+  padding: 50px 0 0;
+  height: 90%;
+}
+
+.projects-list li, .project-card {
+  box-sizing: border-box;
+  aspect-ratio: 1/0.4;
+  max-width: 500px;
+}
+
+.project-card {
+  border: 1px solid black;
+  border-radius: 10px;
 }
