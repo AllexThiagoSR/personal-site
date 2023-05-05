@@ -73,9 +73,9 @@ body {
 }
 
 hr {
+  background-color: black;
   height: 30%;
   width: 1px;
-  background-color: black;
   z-index: -1;
 }
 
