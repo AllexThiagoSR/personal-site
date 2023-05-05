@@ -13,7 +13,6 @@ export async function getStaticProps() {
 }
 
 function Projects({ deployments }) {
-  console.log(deployments);
   return (
     <main>
       <h2 className="page-title">Projects</h2>
