@@ -14,14 +14,16 @@ export async function getStaticProps() {
 function Projects({ deployments }) {
   console.log(deployments);
   return (
-    <div>
-      Projects
+    <main>
+      <h2 className="page-title">Projects</h2>
+      <ul className="projects-list">
       {
-        deployments.map((project) => (
-          <p>{project.name}</p>
+        deployments.map((project, index) => (
+          <li key={ index + 1 + 'º Project'}>{project.name}</li>
         ))
       }
-    </div>
+      </ul>
+    </main>
   );
 }
 
