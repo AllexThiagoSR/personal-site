@@ -2,8 +2,7 @@ import ProjectsList from '@/components/ProjectsList';
 import React from 'react';
 
 export async function getStaticProps() {
-  const { deployments } = await (await fetch('http://localhost:3000/api/projects')).json();
-  console.log(deployments);
+  const deployments = await (await fetch('http://localhost:3000/api/projects')).json();
   return {
     props: {
       deployments,

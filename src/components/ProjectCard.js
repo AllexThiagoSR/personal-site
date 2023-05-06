@@ -12,10 +12,11 @@ function ProjectCard({ project }) {
   return (
     <div className="project-card">
       <span>{ `Project Name: ${formatRepoName(project.name)}` }</span>
-      <Link href={ `http://${project.url}` } target="_blank">
+      <p>{ project.description }</p>
+      <Link href={ project.url } target="_blank">
         Deploy
       </Link>
-      <Link href={`https://github.com/AllexThiagoSR/${project.name}`} target="_blank">
+      <Link href={ project.github_url } target="_blank">
         GitHub Repo
       </Link>
     </div>

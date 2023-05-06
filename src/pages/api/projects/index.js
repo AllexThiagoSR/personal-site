@@ -8,10 +8,16 @@ async function projects(_, response) {
       },
       method: 'get',
     });
-    // const gitHubData = await fetch(GITHUB_BASE_URL);
-    response.json(await data.json());
+    const { deployments } = await data.json();
+    let finalList = [];
+    for(const { name } of deployments) {
+      const { html_url, description, languages_url, homepage } = await( await fetch(GITHUB_BASE_URL + name)).json();
+      const languages = await (await fetch(languages_url)).json();
+      finalList = [...finalList, { name, url: homepage, github_url: html_url, description, languages }];
+    }
+    response.json(finalList);
   } catch(e) {
-    response.json({ message: 'Something went wrong' });
+    response.json({ message: 'Something went wrong', errorMessage: e.message });
   }
 }
 
