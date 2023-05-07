@@ -9,17 +9,31 @@
   height: 90%;
 }
 
-.projects-list li, .project-card {
+.project-card-wrapper, .project-card {
   box-sizing: border-box;
-  aspect-ratio: 1/0.4;
+  aspect-ratio: 1/0.5;
   max-width: 500px;
 }
 
 .project-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border: 1px solid black;
   border-radius: 10px;
   flex-direction: column;
+}
+
+.project-title {
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-infos {
+  padding: 10px 20px;
+}
+
+.project-links li {
+  padding: 0;
+  list-style: none;
 }

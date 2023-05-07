@@ -7,7 +7,7 @@ function ProjectsList({ deployments }) {
     <ul className="projects-list">
       {
         deployments.map((project, index) => (
-          <li key={ index + 1 + 'º Project'}>
+          <li key={ index + 1 + 'º Project'} className="project-card-wrapper">
             <ProjectCard project={ project } />
           </li>
         ))
