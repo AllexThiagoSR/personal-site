@@ -26,7 +26,14 @@ function ProjectCard({ project }) {
         </ul>
       </div>
       <div className="project-infos">
-        <p>{ project.description }</p>
+        <p className="description">{ project.description }</p>
+        <ul className="languages-list">
+          {
+            Object.keys(project.languages).map((lang, index) => (
+              <li key={ `${index + 1}ª Lang`}>{ lang }</li>
+            ))
+          }
+        </ul>
       </div>
     </div>
   );
