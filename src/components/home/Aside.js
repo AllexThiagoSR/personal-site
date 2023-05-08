@@ -1,5 +1,5 @@
 import React from 'react';
-import ContactCard from '../projects/ContactCard';
+import ContactCard from './ContactCard';
 import contactsItems from '@/helpers/contacts';
 
 function Aside() {
