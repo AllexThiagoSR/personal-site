@@ -1,4 +1,5 @@
 import ProjectsList from '@/components/projects/ProjectsList';
+import Head from 'next/head';
 import React from 'react';
 
 export async function getStaticProps() {
@@ -13,10 +14,15 @@ export async function getStaticProps() {
 
 function Projects({ deployments }) {
   return (
-    <main>
-      <h2 className="page-title">Projects</h2>
-      <ProjectsList deployments={ deployments }/>
-    </main>
+    <>
+      <Head>
+        <title>Projetos</title>
+      </Head>
+      <main>
+        <h2 className="page-title">Projetos</h2>
+        <ProjectsList deployments={ deployments }/>
+      </main>
+    </>
   );
 }
 
