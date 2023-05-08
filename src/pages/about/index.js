@@ -7,9 +7,9 @@ function About() {
       <Head>
         <title>Sobre mim</title>
       </Head>
-      <div>
-        about ksksksksk
-      </div>
+      <main>
+        <h2>Sobre mim</h2>
+      </main>
     </>
   );
 }
