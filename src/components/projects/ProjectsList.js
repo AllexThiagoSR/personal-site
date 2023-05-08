@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 function ProjectsList({ deployments }) {
   return (
@@ -16,9 +16,16 @@ function ProjectsList({ deployments }) {
   );
 }
 
-
 ProjectsList.propTypes = {
-  
+  deployments: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string,
+      url: PropTypes.string,
+      githubUrl: PropTypes.string,
+      description: PropTypes.string,
+      languages: PropTypes.objectOf(PropTypes.number),
+    })
+  ).isRequired,
 };
 
 export default ProjectsList;

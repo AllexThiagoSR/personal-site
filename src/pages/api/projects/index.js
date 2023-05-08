@@ -13,7 +13,7 @@ async function projects(_, response) {
     for(const { name } of deployments) {
       const { html_url, description, languages_url, homepage } = await( await fetch(GITHUB_BASE_URL + name)).json();
       const languages = await (await fetch(languages_url)).json();
-      finalList = [...finalList, { name, url: homepage, github_url: html_url, description, languages }];
+      finalList = [...finalList, { name, url: homepage, githubUrl: html_url, description, languages }];
     }
     response.json(finalList);
   } catch(e) {
