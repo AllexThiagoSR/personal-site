@@ -1,8 +1,5 @@
 import React from 'react';
-// import gitHubLogoIcon from '../images/githubIcon.svg';
-// import linkedinLogoIcon from '../images/linkedinLogo.svg';
-// import gmailLogoIcon from '../images/gmailLogo.svg';
-import ContactCard from './ContactCard';
+import ContactCard from '../projects/ContactCard';
 import contactsItems from '@/helpers/contacts';
 
 function Aside() {

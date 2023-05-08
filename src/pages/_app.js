@@ -1,8 +1,8 @@
-import Header from '@/components/Header';
+import Header from '@/components/home/Header';
 import '../styles/globals.css';
 import '../styles/RootPage.css';
 import '../styles/ProjectsPage.css';
-import Aside from '@/components/Aside';
+import Aside from '@/components/home/Aside';
 import Head from 'next/head';
 import logo from '../images/logo.png'
 

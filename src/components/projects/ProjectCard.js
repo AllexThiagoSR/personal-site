@@ -2,8 +2,8 @@ import formatRepoName from '@/helpers/formatRepoName';
 import Link from 'next/link';
 import React from 'react';
 import PropTypes from 'prop-types';
-import externalLinkIcon from '../images/externalLinkIcon.svg';
-import gitHubIcon from '../images/githubIcon.svg';
+import externalLinkIcon from '../../images/externalLinkIcon.svg';
+import gitHubIcon from '../../images/githubIcon.svg';
 import Image from 'next/image';
 
 function ProjectCard({ project }) {
@@ -12,6 +12,7 @@ function ProjectCard({ project }) {
     <div className="project-card">
       <div className="project-title">
         <h3>{ formatRepoName(project.name) }</h3>
+        {/* Transformar essa lista em um componente separdo */}
         <ul className="project-links">
           <li>
             <Link href={ project.url } target="_blank">
@@ -27,6 +28,7 @@ function ProjectCard({ project }) {
       </div>
       <div className="project-infos">
         <p className="description">{ project.description }</p>
+        {/* Transformar essa lista em um componente separado depois  */}
         <ul className="languages-list">
           {
             Object.keys(project.languages).map((lang, index) => (

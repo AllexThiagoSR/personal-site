@@ -1,4 +1,4 @@
-import SkillsList from '@/components/SkillsList';
+import SkillsList from '@/components/home/SkillsList';
 import Head from 'next/head';
 import Image from 'next/image';
 import placeholderImage from 'src/images/placeholderImage.jpg';
