@@ -5,7 +5,6 @@ import ProjectLinks from './ProjectLinks';
 import LanguagesList from './LanguagesList';
 
 function ProjectCard({ project }) {
-  console.log(project);
   return (
     <div className="project-card">
       <div className="project-title">
