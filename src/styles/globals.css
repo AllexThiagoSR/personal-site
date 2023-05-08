@@ -1,9 +1,14 @@
+:root {
+  --blue-white: rgb(226 232 240);
+}
+
 * {
   margin: 0;
   font-family: "Rubik", sans-serif;
 }
 
 body {
+  background-color: var(--blue-white);
   height: 100vh;
 }
 
@@ -60,20 +65,39 @@ body {
 }
 
 .header-logo-text  { 
-  fill: white;
+  fill: var(--blue-white);
   font-size: 45px;
   font-family: courier, arial, helvetica;
   font-weight: 900;
 } 
 
 .navigation-bar ul {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
   padding: 0;
   list-style: none;
 }
 
 .navigation-bar ul li {
-  margin: 0 10px;
+  box-sizing: border-box; 
+}
+
+.navigation-bar a {
+  background-color: black;
+  border-radius: 5px;
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-align: center;
+  color: var(--blue-white);
+  box-sizing: border-box;
+}
+
+.navigation-bar a:hover {
+  border: 1px solid black;
+  background-color: var(--blue-white);
+  color: black;
 }
 
 hr {
