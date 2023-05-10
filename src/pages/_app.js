@@ -5,6 +5,7 @@ import '../styles/ProjectsPage.css';
 import Aside from '@/components/home/Aside';
 import Head from 'next/head';
 import logo from '../images/logo.png'
+import '../styles/AboutPage.css';
 
 export default function App({ Component, pageProps }) {
   return (

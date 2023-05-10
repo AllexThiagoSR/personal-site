@@ -20,11 +20,13 @@ function ProjectCard({ project }) {
 }
 
 ProjectCard.propTypes = {
-  description: PropTypes.string.isRequired,
-  github_url: PropTypes.string.isRequired,
-  languages: PropTypes.objectOf(PropTypes.string).isRequired,
-  name: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
+  project: PropTypes.shape({
+    description: PropTypes.string,
+    githubUrl: PropTypes.string,
+    languages: PropTypes.objectOf(PropTypes.number),
+    name: PropTypes.string,
+    url: PropTypes.string,
+  })
 };
 
 export default ProjectCard;
