@@ -84,6 +84,7 @@ body {
 }
 
 .navigation-bar a {
+  font-weight: 600;
   background-color: black;
   border-radius: 5px;
   display: block;
