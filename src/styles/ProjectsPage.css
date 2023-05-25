@@ -3,6 +3,7 @@
   justify-content: center;
   grid-template-columns: minmax(100px, 500px) minmax(100px, 500px);
   column-gap: 5%;
+  row-gap: 10%;
   display: grid;
   list-style: none;
   height: 90%;
