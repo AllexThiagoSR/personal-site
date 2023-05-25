@@ -1,0 +1,31 @@
+.short-description {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.short-description p {
+  font-size: 22px;
+}
+
+.short-description p.short-description-text {
+  max-width: 600px;
+  font-weight: 800;
+  text-align: justify;
+}
+
+.skills-wrapper {
+  margin: 30px 0 0;
+}
+
+.skills-list {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 200px 200px;
+  column-gap: 5%;
+}
+
+.skills-list li::marker{
+  content: '▻ ';
+}

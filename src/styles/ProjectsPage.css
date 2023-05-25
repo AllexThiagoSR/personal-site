@@ -1,0 +1,56 @@
+.projects-list {
+  overflow-y: scroll;
+  justify-content: center;
+  grid-template-columns: minmax(100px, 500px) minmax(100px, 500px);
+  column-gap: 5%;
+  display: grid;
+  list-style: none;
+  height: 90%;
+}
+
+.project-card-wrapper, .project-card {
+  box-sizing: border-box;
+  aspect-ratio: 1/0.5;
+  max-width: 500px;
+}
+
+.project-card {
+  border: 1px solid black;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+.project-title {
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-infos {
+  padding: 10px 20px;
+  height: 50%;
+}
+
+.project-links {
+  padding: 0;
+  list-style: none;
+}
+
+.description {
+  height: 70px;
+  margin: 0 0 15px;
+}
+
+.languages-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 2px;
+}
+
+.languages-list li {
+  text-align: center;
+}
