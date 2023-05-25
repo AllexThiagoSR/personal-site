@@ -3,10 +3,10 @@ import Head from 'next/head';
 import React from 'react';
 
 export async function getStaticProps() {
-  const deployments = await (await fetch('http://localhost:3000/api/projects')).json();
+  // const deployments = await (await fetch('http://localhost:3000/api/projects')).json();
   return {
     props: {
-      deployments,
+      deployments: [],
     },
     revalidate: 10,
   }

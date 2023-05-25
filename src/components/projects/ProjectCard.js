@@ -8,7 +8,7 @@ function ProjectCard({ project }) {
   return (
     <div className="project-card">
       <div className="project-title">
-        <h3>{ project.name }</h3>
+        <h3>{ formatRepoName(project.name) }</h3>
         <ProjectLinks url={ project.url } gitHubUrl={ project.githubUrl } />
       </div>
       <div className="project-infos">
