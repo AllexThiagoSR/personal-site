@@ -1,7 +1,7 @@
 import SkillsList from '@/components/home/SkillsList';
 import Head from 'next/head';
 import Image from 'next/image';
-import placeholderImage from 'src/images/placeholderImage.jpg';
+import me from  'src/images/me.jpg';
 
 export default function Home() {
   return (
@@ -16,18 +16,21 @@ export default function Home() {
           <div>
             <p className="short-description-text">
               Opa! Meu nome é Allex Thiago.
-              Sou um Desenvolvedor Web Frontend Junior
+              Sou um Desenvolvedor Web Fullstack Junior
               apaixonado em resolver problemas no mundo da tecnologia,
               e estou em busca de oportunidades de me desenvolver e me desafiar.
             </p>
             <SkillsList /> 
           </div>
-          <Image
-            src={ placeholderImage }
-            alt="Author"
-            width={ 292 }
-            height={ 200 }
-          />
+          <div className='image-container'>
+            <Image
+              src={ me }
+              alt="Author"
+              width={ '100%' }
+              height={ '100%' }
+              className='me'
+            />
+          </div>
         </section>
       </main>
     </>

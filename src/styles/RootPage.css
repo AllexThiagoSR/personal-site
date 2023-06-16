@@ -29,3 +29,19 @@
 .skills-list li::marker{
   content: '▻ ';
 }
+
+.image-container {
+  height: 400px;
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.me {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}

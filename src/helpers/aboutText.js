@@ -1,16 +1,19 @@
-const introduction = `Olá, me chamo Allex, e nessa página vou falar um pouco sobre mim e sobre minhas experiências. Me descrevendo brevemente, sou uma pessoa tranquila e esforçada de uma cidade pequena do Maranhão na fronteira com o Pará, tenho muitos hobbies, mas os principais são ouvir música e jogar, tenho 3 animais de estimação, dois gatos e uma cadelinha, ou seja, adoro animais.`;
+const introduction = `Olá, meu nome é Allex e nesta página vou compartilhar um pouco sobre mim e minhas experiências. Permita-me apresentar brevemente: sou uma pessoa tranquila e esforçada, oriunda de uma cidade pequena na fronteira do Maranhão com o Pará. Tenho diversos hobbies, mas meus principais são ouvir música e jogar. Além disso, sou um amante de animais e tenho o prazer de cuidar de dois gatos e uma adorável cadelinha.`;
 
-const firstMiddle = `Eu infelizmente não tive experiências profissionais ainda. No momentos estou procurando desenvolver meus conhecimentos técnicos e comportamentais, mas também estou em busca de experiências no mercado como Desenvolvedor Front-end. Na parte dos conhecimentos técnicos estou aprendendo a parte back-end do desenvolvimento web e o framework Next.js para front-end(inclusive essa página foi construída com Next), nos conhecimentos comportamentais, na trybe onde estudo temos várias mentorias e insights sobre assuntos como: Resiliência, comunicação assertiva e auto-liderança, e as práticas com projetos em grupo ajudam a treinar os dois âmbitos citados juntos. Se você acha que eu me encaixo na sua empresa, a barra lateral tem meus contatos, ficarei muito contente com seu interesse na minhas habilidades.`;
+const firstMiddle = `Embora ainda não tenha tido experiências profissionais, estou empenhado em expandir meus conhecimentos técnicos e habilidades comportamentais. Atualmente, estou buscando oportunidades no mercado como Desenvolvedor web Fullstack. No que diz respeito aos conhecimentos técnicos, estou aprendendo a parte de desenvolvimento web back-end, utilizando Node.js, express, sequelize e também o framework Next.js para o front-end (inclusive, esta página foi construída utilizando Next.js). Em relação às habilidades comportamentais, a Trybe, onde estudo, oferece mentorias e insights sobre temas como resiliência, comunicação assertiva e auto-liderança. Além disso, os projetos em grupo proporcionam um ambiente propício para desenvolver tais habilidades. Se você acredita que minha experiência se encaixa em sua empresa, meus contatos estão disponíveis na barra lateral. Ficaria muito satisfeito com seu interesse em minhas habilidades.`;
 
-const secondMiddle = `Falando um pouco mais dos meus hobbies, música é uma das coisas que mais me move e emociona, no quesito de tocar instrumentos, eu arranho um pouco o violão, e no quesito de gosto musical sou eclético escuto um pouco de tudo, mas o que mais tenho ouvido atualmente é pop num geral e rap. Meu gosto para jogos também é bem eclético, mas atualmente estou explorando o mundo melancólico de Dark Souls 3, mas já joguei vários outros como: Hollow Knight, Tomb Raider e Titan Souls, e ainda tenho vários na minha lista. Caso haja alguma sugestão de jogo ou música me manda um email, adoro falar sobre.`;
+const secondMiddle = `Falando um pouco mais sobre meus hobbies, a música é uma das coisas que mais me emociona e me inspira. Quanto a tocar instrumentos, arranho um pouco de violão. Quanto ao gosto musical, sou eclético e aprecio diversos estilos, mas atualmente tenho ouvido muito pop e rap. No que diz respeito a jogos, também tenho um gosto variado, mas recentemente tenho explorado o mundo melancólico de Dark Souls 3. Já joguei outros jogos como Hollow Knight, Tomb Raider e Titan Souls, e ainda tenho vários outros em minha lista. Caso você tenha sugestões de jogos ou músicas, sinta-se à vontade para me enviar um e-mail. Adoro discutir sobre esses assuntos.`;
 
-const conclusion = `Se você tiver alguma sugestão de melhoria nessa página, me manda no email ou no repositório que se encontra nesse `
+const conclusion = `Se você tiver sugestões para melhorar esta página, por favor, envie-me um e-mail ou acesse o repositório disponível neste `
+
+const finalPhrase = `Fique à vontade para entrar em contato. Será um prazer conversar com você. `
 
 const aboutText = {
   introduction,
   firstMiddle,
   secondMiddle,
   conclusion,
+  finalPhrase
 };
 
 export default aboutText;

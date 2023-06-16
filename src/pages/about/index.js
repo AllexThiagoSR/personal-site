@@ -18,6 +18,7 @@ function About() {
           <p>{ aboutText.conclusion }
             <Link href="https://github.com/AllexThiagoSR/personal-site">link</Link>.
           </p>
+          <p>{ aboutText.finalPhrase }</p>
         </section>
       </main>
     </>

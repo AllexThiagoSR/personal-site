@@ -8,9 +8,10 @@ export async function getStaticProps() {
   const token = process.env.ACCESS_API_TOKEN;
   const githubToken = process.env.GITHUB_API_TOKEN
   const GITHUB_BASE_URL = 'https://api.github.com/repos/AllexThiagoSR/';
-  const data = await fetch('https://api.vercel.com/v6/deployments', makeHeaderWithAuth(token));
+  const data = await fetch('https://api.vercel.com/v6/deployments?target=production', makeHeaderWithAuth(token));
   const { deployments } = await data.json();
-  const finalList = deployments.map(async({ name }) => {
+  console.log(deployments);
+  const finalList = deployments.map(async ({ name }) => {
     const {
       html_url,
       description,
