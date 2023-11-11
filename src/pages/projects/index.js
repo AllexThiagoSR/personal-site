@@ -5,13 +5,19 @@ import Head from 'next/head';
 import React from 'react';
 
 export async function getStaticProps() {
-  const token = process.env.ACCESS_API_TOKEN;
-  const githubToken = process.env.GITHUB_API_TOKEN
+  const githubToken = process.env.GITHUB_API_TOKEN;
   const GITHUB_BASE_URL = 'https://api.github.com/repos/AllexThiagoSR/';
-  const data = await fetch('https://api.vercel.com/v6/deployments?target=production', makeHeaderWithAuth(token));
-  const { deployments } = await data.json();
-  console.log(deployments);
-  const finalList = deployments.map(async ({ name }) => {
+  const projects = [
+    'personal-site',
+    'preview-tunes',
+    'event-house-manager',
+    'biblioteca-ze-nacional',
+    'wallet-manager',
+    'trunfo-backend',
+    'trunfo-frontend',
+    'manage_app'
+  ];
+  const finalList = projects.map(async (name) => {
     const {
       html_url,
       description,
@@ -23,7 +29,7 @@ export async function getStaticProps() {
   });
   return {
     props: {
-      deployments: uniqueProject(await Promise.all(finalList)),
+      deployments: await Promise.all(finalList),
     },
     revalidate: 10,
   }
