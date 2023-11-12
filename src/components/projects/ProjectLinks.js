@@ -27,7 +27,7 @@ function ProjectLinks({ url, gitHubUrl }) {
 }
 
 ProjectLinks.propTypes = {
-  url: PropTypes.string.isRequired,
+  url: PropTypes.string,
   gitHubUrl: PropTypes.string.isRequired,
 };
 
