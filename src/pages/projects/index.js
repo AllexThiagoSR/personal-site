@@ -1,6 +1,5 @@
 import ProjectsList from '@/components/projects/ProjectsList';
 import makeHeaderWithAuth from '@/helpers/makeHeaderWithAuth';
-import uniqueProject from '@/helpers/uniqueObject';
 import Head from 'next/head';
 import React from 'react';
 
