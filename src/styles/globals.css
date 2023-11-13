@@ -126,7 +126,7 @@ hr {
     justify-content: space-between;
     align-items: center;
     display: flex;
-    height: 50px;
+    min-height: 50px;
     width: 90%;
     align-self: center;
     overflow-y: hidden;
