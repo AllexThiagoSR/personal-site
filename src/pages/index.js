@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
       <main>
         <section className="short-description">
-          <div>
+          <div className="text-container">
             <p className="short-description-text">
               Opa! Meu nome é Allex Thiago.
               Sou um Desenvolvedor Web Fullstack Junior

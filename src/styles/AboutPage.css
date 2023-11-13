@@ -1,8 +1,10 @@
 .about-section {
-  padding: 0 0 0 40px;
+  padding: 0 20px;
+  height: 80%;
+  overflow-y: scroll;
 }
 
 .about-section p {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   text-align: justify;
 }

@@ -13,6 +13,7 @@ function ProjectCard({ project }) {
       </div>
       <div className="project-infos">
         <p className="description">{ project.description }</p>
+        { project.inDevelopment && <p>Project still under development </p> }
         <LanguagesList languages={ project.languages }/>
       </div>
     </div>
@@ -26,6 +27,7 @@ ProjectCard.propTypes = {
     languages: PropTypes.objectOf(PropTypes.number),
     name: PropTypes.string,
     url: PropTypes.string,
+    inDevelopment: PropTypes.bool.isRequired,
   })
 };
 

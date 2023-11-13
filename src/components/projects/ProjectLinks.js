@@ -9,9 +9,13 @@ function ProjectLinks({ url, gitHubUrl }) {
   return (
     <ul className="project-links">
       <li>
-        <Link href={ url } target="_blank">
-          <Image alt="Deploy" src={ externalLinkIcon.src } width={ 20 } height={ 20 }/>
-        </Link>
+        {
+          url && (
+            <Link href={ url } target="_blank">
+              <Image alt="Deploy" src={ externalLinkIcon.src } width={ 20 } height={ 20 }/>
+            </Link>
+          )
+        }
       </li>
       <li>
         <Link href={ gitHubUrl } target="_blank">
@@ -23,7 +27,7 @@ function ProjectLinks({ url, gitHubUrl }) {
 }
 
 ProjectLinks.propTypes = {
-  url: PropTypes.string.isRequired,
+  url: PropTypes.string,
   gitHubUrl: PropTypes.string.isRequired,
 };
 
