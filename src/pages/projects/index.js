@@ -1,17 +1,46 @@
 import ProjectsList from '@/components/projects/ProjectsList';
 import makeHeaderWithAuth from '@/helpers/makeHeaderWithAuth';
-import uniqueProject from '@/helpers/uniqueObject';
 import Head from 'next/head';
 import React from 'react';
 
 export async function getStaticProps() {
-  const token = process.env.ACCESS_API_TOKEN;
-  const githubToken = process.env.GITHUB_API_TOKEN
+  const githubToken = process.env.GITHUB_API_TOKEN;
   const GITHUB_BASE_URL = 'https://api.github.com/repos/AllexThiagoSR/';
-  const data = await fetch('https://api.vercel.com/v6/deployments?target=production', makeHeaderWithAuth(token));
-  const { deployments } = await data.json();
-  console.log(deployments);
-  const finalList = deployments.map(async ({ name }) => {
+  const projects = [
+    {
+      name: 'personal-site',
+      inDevelopment: true,
+    },
+    {
+      name: 'preview-tunes',
+      inDevelopment: false,
+    },
+    {
+      name: 'event-house-manager',
+      inDevelopment: false,
+    },
+    {
+      name: 'biblioteca-ze-nacional',
+      inDevelopment: false,
+    },
+    {
+      name: 'wallet-manager',
+      inDevelopment: false,
+    },
+    {
+      name: 'trunfo-backend',
+      inDevelopment: true,
+    },
+    {
+      name: 'trunfo-frontend',
+      inDevelopment: true,
+    },
+    {
+      name: 'manager-app',
+      inDevelopment: true,
+    },
+  ];
+  const finalList = projects.map(async ({ name, inDevelopment }) => {
     const {
       html_url,
       description,
@@ -19,11 +48,11 @@ export async function getStaticProps() {
       homepage,
     } = await( await fetch(GITHUB_BASE_URL + name, makeHeaderWithAuth(githubToken))).json();
     const languages = await (await fetch(languages_url, makeHeaderWithAuth(githubToken))).json();
-    return { name, url: homepage, githubUrl: html_url, description, languages };
+    return { name, url: homepage, githubUrl: html_url, description, languages, inDevelopment };
   });
   return {
     props: {
-      deployments: uniqueProject(await Promise.all(finalList)),
+      deployments: await Promise.all(finalList),
     },
     revalidate: 10,
   }
